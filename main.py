@@ -49,7 +49,7 @@ async def on_message(message):
     config.read_string(channel_topic.removeprefix("gptgame=true\n"))
 
     if message.content.startswith('>gptgame.ping'):
-        await message.channel.send('du stinkst')
+        await message.channel.send('pong')
 
     if message.content.startswith('>gptgame.help'):
         help = """>gptgame.help  -  Print this help
